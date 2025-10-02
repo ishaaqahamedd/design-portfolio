@@ -1,0 +1,112 @@
+export const workItems = [
+  {
+    id: 1,
+    title: 'Vibe Coding',
+    slug: 'vibe-coding',
+    description: 'Innovative coding projects that blend creativity with technical excellence. Explore cutting-edge web applications and interactive experiences.',
+    gifUrl: 'https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=800',
+  },
+  {
+    id: 2,
+    title: 'UX Case Studies',
+    slug: 'ux-case-studies',
+    description: 'Deep dive into user experience design processes, research methodologies, and solutions that solve real-world problems.',
+    gifUrl: 'https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800',
+  },
+  {
+    id: 3,
+    title: 'Designs',
+    slug: 'designs',
+    description: 'Visual design work spanning brand identity, interfaces, and creative concepts that push boundaries.',
+    gifUrl: 'https://images.pexels.com/photos/196645/pexels-photo-196645.jpeg?auto=compress&cs=tinysrgb&w=800',
+  },
+];
+
+export const resources = [
+  {
+    id: 1,
+    title: 'Design Systems Guide',
+    slug: 'design-systems-guide',
+    description: 'Comprehensive guide to building scalable design systems',
+    thumbnailUrl: 'https://images.pexels.com/photos/326503/pexels-photo-326503.jpeg?auto=compress&cs=tinysrgb&w=600',
+  },
+  {
+    id: 2,
+    title: 'Modern CSS Techniques',
+    slug: 'modern-css-techniques',
+    description: 'Advanced CSS patterns and best practices for 2024',
+    thumbnailUrl: 'https://images.pexels.com/photos/270404/pexels-photo-270404.jpeg?auto=compress&cs=tinysrgb&w=600',
+  },
+  {
+    id: 3,
+    title: 'UX Research Methods',
+    slug: 'ux-research-methods',
+    description: 'Essential user research techniques for designers',
+    thumbnailUrl: 'https://images.pexels.com/photos/3184357/pexels-photo-3184357.jpeg?auto=compress&cs=tinysrgb&w=600',
+  },
+  {
+    id: 4,
+    title: 'Performance Optimization',
+    slug: 'performance-optimization',
+    description: 'Speed up your web applications with proven strategies',
+    thumbnailUrl: 'https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=600',
+  },
+  {
+    id: 5,
+    title: 'Accessibility Standards',
+    slug: 'accessibility-standards',
+    description: 'Making the web inclusive for everyone',
+    thumbnailUrl: 'https://images.pexels.com/photos/267569/pexels-photo-267569.jpeg?auto=compress&cs=tinysrgb&w=600',
+  },
+];
+
+export const projects = [
+  {
+    id: 1,
+    title: 'E-Commerce Platform',
+    category: 'vibe-coding',
+    description: 'Full-stack e-commerce solution with payment integration',
+    thumbnailUrl: 'https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=600',
+    slug: 'ecommerce-platform',
+  },
+  {
+    id: 2,
+    title: 'Banking App Redesign',
+    category: 'ux-case-studies',
+    description: 'Complete UX overhaul of mobile banking experience',
+    thumbnailUrl: 'https://images.pexels.com/photos/4968630/pexels-photo-4968630.jpeg?auto=compress&cs=tinysrgb&w=600',
+    slug: 'banking-app-redesign',
+  },
+  {
+    id: 3,
+    title: 'Brand Identity System',
+    category: 'designs',
+    description: 'Cohesive brand system for tech startup',
+    thumbnailUrl: 'https://images.pexels.com/photos/1666068/pexels-photo-1666068.jpeg?auto=compress&cs=tinysrgb&w=600',
+    slug: 'brand-identity-system',
+  },
+  {
+    id: 4,
+    title: 'Real-time Dashboard',
+    category: 'vibe-coding',
+    description: 'Analytics dashboard with live data updates',
+    thumbnailUrl: 'https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=600',
+    slug: 'realtime-dashboard',
+  },
+  {
+    id: 5,
+    title: 'Healthcare Portal Study',
+    category: 'ux-case-studies',
+    description: 'User research and design for patient portal',
+    thumbnailUrl: 'https://images.pexels.com/photos/4386467/pexels-photo-4386467.jpeg?auto=compress&cs=tinysrgb&w=600',
+    slug: 'healthcare-portal-study',
+  },
+  {
+    id: 6,
+    title: 'UI Component Library',
+    category: 'designs',
+    description: 'Reusable component system for web apps',
+    thumbnailUrl: 'https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=600',
+    slug: 'ui-component-library',
+  },
+];
