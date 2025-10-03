@@ -9,7 +9,7 @@ import JsonLd from '@/components/JsonLd';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Ishaaq Design Portfolio',
+  title: 'Ishaaq\'s Design Portfolio',
   description: 'Creating exceptional digital experiences through design and code. Explore my work in web development, UX design, and creative projects.',
   keywords: ['portfolio', 'web design', 'ux design', 'web development', 'ui design', 'designer', 'developer'],
   authors: [{ name: 'Ishaaq ahamed' }],
@@ -22,8 +22,8 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
     url: 'https://www.ishaaq.me',
-    siteName: 'Ishaaq Portfolio',
-    title: 'Portfolio | Designer & Developer',
+    siteName: 'Ishaaq\'s Portfolio',
+    title: 'Ishaaq\'s Design Portfolio',
     description: 'Creating exceptional digital experiences through design and code.',
     images: [
       {
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Portfolio | Designer & Developer',
+    title: 'Ishaaq\'s Design Portfolio',
     description: 'Creating exceptional digital experiences through design and code.',
     images: ['/twitter-image.jpg'],
   },
@@ -50,9 +50,6 @@ export const metadata: Metadata = {
       'max-image-preview': 'large',
       'max-snippet': -1,
     },
-  },
-  verification: {
-    google: 'your-google-verification-code',
   },
 };
 
@@ -73,11 +70,15 @@ export default function RootLayout({
           data={{
             '@context': 'https://schema.org',
             '@type': 'LocalBusiness',
-            name: 'Ishaaq Portfolio',
+            name: 'Ishaaq\'s Portfolio',
             url: 'https://www.ishaaq.me',
             image: 'https://www.ishaaq.me/og-image.jpg',
             address: {
               '@type': 'PostalAddress',
+              streetAddress: 'mypadu road, 3rd Mile',
+              addressLocality: 'Nellore',
+              addressRegion: 'Andhrapradesh',
+              postalCode: '524002',
               addressCountry: 'IN',
             },
             review : {
@@ -92,6 +93,8 @@ export default function RootLayout({
                 name: 'Ishaaq Ahamed'
               }
             },
+            telephone: '+91-9121-9069-13',
+            email: 'Ishaaq2905@gmail.com',
             areaServed: 'Worldwide',
             priceRange: '50$-500$'
           }}

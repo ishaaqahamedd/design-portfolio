@@ -1,4 +1,4 @@
-robots.txt for www.ishaaq.me
+# robots.txt for www.ishaaq.me
 # Last updated: October 3, 2025
 
 User-agent: *
