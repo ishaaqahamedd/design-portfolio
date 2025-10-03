@@ -7,28 +7,29 @@ export default function Home() {
   const organizationSchema = {
     '@context': 'https://schema.org',
     '@type': 'Organization',
-    name: 'Portfolio',
-    url: 'https://example.com',
+    name: 'Ishaaq Portfolio',
+    url: 'https://www.ishaaq.me/',
     logo: 'https://example.com/logo.png',
     description: 'Creating exceptional digital experiences through design and code',
     contactPoint: {
       '@type': 'ContactPoint',
-      telephone: '+1-555-123-4567',
-      contactType: 'Customer Service',
-      email: 'contact@example.com',
+      telephone: '+91-9121-9069-13',
+      contactType: 'owner',
+      email: 'Ishaaq2905@gmail.com',
     },
     sameAs: [
-      'https://linkedin.com/in/yourprofile',
-      'https://github.com/yourusername',
-      'https://twitter.com/yourusername',
+      'https://linkedin.com/in/ishaaq-ahamed',
+      'https://github.com/ishaaqahamedd',
+      'https://www.instagram.com/ishaaqahamedd/',
+      'https://www.youtube.com/c/IshaaqAhamed',
     ],
   };
 
   const websiteSchema = {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
-    name: 'Portfolio',
-    url: 'https://example.com',
+    name: 'Ishaaq Portfolio',
+    url: 'https://www.ishaaq.me',
     description: 'Designer & Developer portfolio showcasing web development, UX design, and creative projects',
     potentialAction: {
       '@type': 'SearchAction',
@@ -45,7 +46,7 @@ export default function Home() {
         '@type': 'ListItem',
         position: 1,
         name: 'Home',
-        item: 'https://example.com',
+        item: 'https://www.ishaaq.me',
       },
     ],
   };

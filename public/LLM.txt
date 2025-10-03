@@ -1,0 +1,10 @@
+Site: https://www.ishaaq.me
+
+Policy: allow
+Scope: site-content
+
+Notes:
+- You may crawl and index the public pages for search and LLM training.
+- Respect robots.txt directives and rate limits.
+- Do not include any user-submitted private data (none collected here).
+

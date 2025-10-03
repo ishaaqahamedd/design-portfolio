@@ -4,24 +4,25 @@ import Script from 'next/script';
 import { Inter } from 'next/font/google';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import JsonLd from '@/components/JsonLd';
 
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Portfolio | Designer & Developer',
+  title: 'Ishaaq Design Portfolio',
   description: 'Creating exceptional digital experiences through design and code. Explore my work in web development, UX design, and creative projects.',
   keywords: ['portfolio', 'web design', 'ux design', 'web development', 'ui design', 'designer', 'developer'],
   authors: [{ name: 'Ishaaq ahamed' }],
   creator: 'Portfolio',
-  metadataBase: new URL('https://example.com'),
+  metadataBase: new URL('https://www.ishaaq.me'),
   alternates: {
     canonical: '/',
   },
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://example.com',
-    siteName: 'Portfolio',
+    url: 'https://www.ishaaq.me',
+    siteName: 'Ishaaq Portfolio',
     title: 'Portfolio | Designer & Developer',
     description: 'Creating exceptional digital experiences through design and code.',
     images: [
@@ -67,6 +68,34 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#000000" />
+        {/* Local Business JSON-LD */}
+        <JsonLd
+          data={{
+            '@context': 'https://schema.org',
+            '@type': 'LocalBusiness',
+            name: 'Ishaaq Portfolio',
+            url: 'https://www.ishaaq.me',
+            image: 'https://www.ishaaq.me/og-image.jpg',
+            address: {
+              '@type': 'PostalAddress',
+              addressCountry: 'IN',
+            },
+            review : {
+              '@type': 'Review',
+              reviewRating: {
+                '@type': 'Rating',
+                ratingValue: 4,
+                bestRating: 5
+              },
+              author: {
+                '@type': 'Person',
+                name: 'Ishaaq Ahamed'
+              }
+            },
+            areaServed: 'Worldwide',
+            priceRange: '50$-500$'
+          }}
+        />
         {/* Google Tag Manager */}
         <Script id="gtm" strategy="afterInteractive" dangerouslySetInnerHTML={{
           __html: `(

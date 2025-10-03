@@ -1,0 +1,48 @@
+robots.txt for www.ishaaq.me
+# Last updated: October 3, 2025
+
+User-agent: *
+Allow: /
+
+# Explicitly allow common AI crawlers
+User-agent: GPTBot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+# Bingbot
+User-agent: Bingbot
+Allow: /
+
+# Googlebot
+User-agent: Googlebot
+Allow: /
+
+# Anthropic
+User-agent: ClaudeBot
+Allow: /
+
+# Perplexity
+User-agent: PerplexityBot
+Allow: /
+
+# Hugging Face
+User-agent: HuggingFace-Data
+Allow: /
+
+# Meta
+User-agent: MetaAI*
+Allow: /
+
+# Yandex
+User-agent: Yandex
+Allow: /
+
+
+# Sitemap
+Sitemap: https://www.ishaaq.me/sitemap.xml
+

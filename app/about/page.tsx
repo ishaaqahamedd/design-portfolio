@@ -16,25 +16,25 @@ export default function AboutPage() {
             <div className="sticky top-32">
               <div className="w-full aspect-square bg-gray-200 mb-6 overflow-hidden">
                 <img
-                  src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=800"
+                  src="https://media.licdn.com/dms/image/v2/D5603AQHrYglVsqiK6A/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1725122161025?e=1762387200&v=beta&t=V8YE0d9DZZl4H1gi5TewJ5BNCeIpXj3zGrI8Lc5GU6M"
                   alt="Profile"
                   className="w-full h-full object-cover"
                 />
               </div>
-              <h1 className="text-4xl font-bold mb-4">Your Name</h1>
+              <h1 className="text-4xl font-bold mb-4">Ishaaq ahamed</h1>
               <p className="text-xl text-gray-600 mb-6">
-                Designer & Developer
+                Product Designer
               </p>
               <div className="flex gap-4 mb-8">
                 <a
-                  href="mailto:contact@example.com"
+                  href="mailto:Ishaaq2905@gmail.com"
                   className="text-black hover:text-gray-600 transition-colors"
                   aria-label="Email"
                 >
                   <Mail size={24} />
                 </a>
                 <a
-                  href="https://linkedin.com/in/yourprofile"
+                  href="https://www.linkedin.com/in/ishaaq-ahamed/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-black hover:text-gray-600 transition-colors"
@@ -96,7 +96,7 @@ export default function AboutPage() {
                     <Briefcase size={24} className="flex-shrink-0 mt-1" />
                     <div>
                       <h3 className="text-2xl font-bold">Senior Product Designer</h3>
-                      <p className="text-gray-600">Tech Company Inc. • 2021 - Present</p>
+                      <p className="text-gray-600">Codinglimits • Feb 2025 - Present</p>
                     </div>
                   </div>
                   <p className="text-gray-600 leading-relaxed">
@@ -168,8 +168,8 @@ export default function AboutPage() {
             <section className="mb-16">
               <h2 className="text-4xl font-bold mb-6">Education</h2>
               <div className="border-l-4 border-black pl-6">
-                <h3 className="text-2xl font-bold mb-2">Bachelor of Science in Computer Science</h3>
-                <p className="text-gray-600">University Name • 2012 - 2016</p>
+                <h3 className="text-2xl font-bold mb-2">Bachelor of Electronics & Communication Engineering</h3>
+                <p className="text-gray-600">Rajiv Gandhi University of Knowledge Technologies • 2019 - 2023</p>
               </div>
             </section>
 

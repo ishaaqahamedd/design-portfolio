@@ -54,7 +54,7 @@ export default function ProjectsPage() {
               className={`px-4 sm:px-6 py-2 sm:py-3 font-bold transition-colors border-b-2 whitespace-nowrap text-sm sm:text-base ${
                 selectedCategory === category.value
                   ? 'border-black text-black'
-                  : 'border-transparent text-gray-400 hover:text-gray-600'
+                  : 'border-transparent text-gray-700 hover:text-black'
               }`}
             >
               {category.label}

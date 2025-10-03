@@ -134,7 +134,7 @@ export default function ContactPage() {
                       href="mailto:contact@example.com"
                       className="text-gray-600 hover:text-black transition-colors"
                     >
-                      contact@example.com
+                      Ishaaq2905@gmail.com
                     </a>
                   </div>
                 </div>
@@ -144,10 +144,10 @@ export default function ContactPage() {
                   <div>
                     <h3 className="font-bold mb-1">Phone</h3>
                     <a
-                      href="tel:+15551234567"
+                      href="tel:+919121906913"
                       className="text-gray-600 hover:text-black transition-colors"
                     >
-                      +1 (555) 123-4567
+                      +91 9121-9069-13
                     </a>
                   </div>
                 </div>
@@ -157,22 +157,22 @@ export default function ContactPage() {
                   <div>
                     <h3 className="font-bold mb-1">Location</h3>
                     <p className="text-gray-600">
-                      San Francisco, CA
+                      Nellore, Andhrapradesh
                       <br />
-                      United States
+                      India
                     </p>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div className="border-t border-gray-200 pt-8">
-              <h3 className="font-bold mb-4">Office Hours</h3>
+            {/* <div className="border-t border-gray-200 pt-8">
+              <h3 className="font-bold mb-4">Availability Hours</h3>
               <div className="space-y-2 text-gray-600">
                 <p>Monday - Friday</p>
                 <p className="font-bold text-black">9:00 AM - 6:00 PM PST</p>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

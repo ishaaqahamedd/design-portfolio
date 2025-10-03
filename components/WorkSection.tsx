@@ -51,7 +51,7 @@ export default function WorkSection() {
                         className={`text-left transition-colors font-medium ${
                           activeIndex === index
                             ? 'text-black text-xl'
-                            : 'text-gray-400 hover:text-gray-600'
+                            : 'text-gray-700 hover:text-black'
                         }`}
                       >
                         {index + 1}. {item.title}

@@ -64,7 +64,7 @@ export default function ResourcesSection() {
                 href={`/resources/${resource.slug}`}
                 className="inline-flex items-center gap-2 text-black font-bold hover:gap-3 transition-all text-sm sm:text-base"
               >
-                Read More
+                Read more about {resource.title}
                 <ArrowRight size={16} className="sm:w-[18px] sm:h-[18px]" />
               </Link>
             </div>

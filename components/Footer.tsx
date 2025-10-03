@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Mail, Linkedin, Github, Twitter } from 'lucide-react';
+import { Mail, Linkedin, Github, Twitter, Instagram } from 'lucide-react';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -9,7 +9,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
           <div>
-            <h3 className="text-xl font-bold mb-4">Portfolio</h3>
+            <h3 className="text-xl font-bold mb-4">Ishaaq ahamed</h3>
             <p className="text-gray-400">
               Creating exceptional digital experiences through design and code.
             </p>
@@ -65,16 +65,16 @@ export default function Footer() {
           <div>
             <h4 className="font-bold mb-4">Connect</h4>
             <div className="flex gap-4">
-              <a href="mailto:contact@example.com" className="text-gray-400 hover:text-white transition-colors">
+              <a href="mailto:ishaaq2905@gmail.com" className="text-gray-400 hover:text-white transition-colors" aria-label="Email Ishaaq">
                 <Mail size={24} />
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
+              <a href="https://linkedin.com/in/ishaaq-ahamed" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors" aria-label="Visit Ishaaq on LinkedIn">
                 <Linkedin size={24} />
               </a>
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
-                <Github size={24} />
+              <a href="https://www.instagram.com/ishaaqahamedd/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors" aria-label="Visit Ishaaq on Instagram">
+                <Instagram size={24} />
               </a>
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
+              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors" aria-label="Visit Ishaaq on X (Twitter)">
                 <Twitter size={24} />
               </a>
             </div>
@@ -84,9 +84,12 @@ export default function Footer() {
         <div className="border-t border-gray-800 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-gray-400 text-sm">
-              © {currentYear} Portfolio. All rights reserved.
+              © {currentYear} Ishaaq Portfolio. All rights reserved.
             </p>
             <div className="flex gap-6 text-sm">
+              <Link href="/faqs" className="text-gray-400 hover:text-white transition-colors">
+                FAQs
+              </Link>
               <Link href="/privacy" className="text-gray-400 hover:text-white transition-colors">
                 Privacy Policy
               </Link>
