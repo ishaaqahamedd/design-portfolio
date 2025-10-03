@@ -1,5 +1,6 @@
 import './globals.css';
 import type { Metadata } from 'next';
+import Script from 'next/script';
 import { Inter } from 'next/font/google';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -10,8 +11,12 @@ export const metadata: Metadata = {
   title: 'Portfolio | Designer & Developer',
   description: 'Creating exceptional digital experiences through design and code. Explore my work in web development, UX design, and creative projects.',
   keywords: ['portfolio', 'web design', 'ux design', 'web development', 'ui design', 'designer', 'developer'],
-  authors: [{ name: 'Portfolio' }],
+  authors: [{ name: 'Ishaaq ahamed' }],
   creator: 'Portfolio',
+  metadataBase: new URL('https://example.com'),
+  alternates: {
+    canonical: '/',
+  },
   openGraph: {
     type: 'website',
     locale: 'en_US',
@@ -19,11 +24,34 @@ export const metadata: Metadata = {
     siteName: 'Portfolio',
     title: 'Portfolio | Designer & Developer',
     description: 'Creating exceptional digital experiences through design and code.',
+    images: [
+      {
+        url: '/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Portfolio - Designer & Developer',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Portfolio | Designer & Developer',
     description: 'Creating exceptional digital experiences through design and code.',
+    images: ['/twitter-image.jpg'],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  verification: {
+    google: 'your-google-verification-code',
   },
 };
 
@@ -34,10 +62,33 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        {/* Additional head elements can be added here if needed */}
+        <link rel="icon" href="/favicon.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#000000" />
+        {/* Google Tag Manager */}
+        <Script id="gtm" strategy="afterInteractive" dangerouslySetInnerHTML={{
+          __html: `(
+            function(w,d,s,l,i){
+              w[l]=w[l]||[];
+              w[l].push({'gtm.start': new Date().getTime(), event:'gtm.js'});
+              var f=d.getElementsByTagName(s)[0], j=d.createElement(s), dl=l!='dataLayer'?'&l='+l:'';
+              j.async=true; j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+              f.parentNode.insertBefore(j,f);
+            }
+          )(window,document,'script','dataLayer','GTM-P47M522R');`
+        }} />
+        {/* End Google Tag Manager */}
+      </head>
       <body className={inter.className}>
         <Header />
         {children}
         <Footer />
+        {/*-- Google Tag Manager (noscript) */}
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P47M522R"
+          height="0" width="0" style={{ display: 'none', visibility: 'hidden' }}></iframe></noscript>
+        {/*-- End Google Tag Manager (noscript) */}
       </body>
     </html>
   );
