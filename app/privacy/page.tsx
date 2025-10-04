@@ -1,3 +1,15 @@
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Privacy Policy | Ishaaq\'s Portfolio',
+  description: 'Privacy policy outlining how we collect, use, and protect your personal information.',
+  openGraph: {
+    title: 'Privacy Policy | Ishaaq\'s Portfolio',
+    description: 'Privacy policy outlining how we collect, use, and protect your personal information.',
+    url: 'https://www.ishaaq.me/privacy',
+  },
+};
+
 export default function PrivacyPolicyPage() {
   return (
     <main className="max-w-4xl mx-auto px-6 py-24">

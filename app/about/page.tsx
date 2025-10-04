@@ -5,6 +5,11 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'About | Portfolio',
   description: 'Learn more about my background, experience, and approach to design and development.',
+  openGraph: {
+    title: 'About | Ishaaq\'s Portfolio',
+    description: 'Learn more about my background, experience, and approach to design and development.',
+    url: 'https://www.ishaaq.me/about',
+  },
 };
 
 export default function AboutPage() {

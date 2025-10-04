@@ -1,5 +1,16 @@
 import JsonLd from '@/components/JsonLd';
 import Link from 'next/link';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'FAQs | Ishaaq\'s Portfolio',
+  description: 'Frequently asked questions about my design and development services, project timelines, and how to get started.',
+  openGraph: {
+    title: 'FAQs | Ishaaq\'s Portfolio',
+    description: 'Frequently asked questions about my design and development services, project timelines, and how to get started.',
+    url: 'https://www.ishaaq.me/faqs',
+  },
+};
 
 const faqs = [
   {

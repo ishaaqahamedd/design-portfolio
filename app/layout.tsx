@@ -15,9 +15,6 @@ export const metadata: Metadata = {
   authors: [{ name: 'Ishaaq ahamed' }],
   creator: 'Portfolio',
   metadataBase: new URL('https://www.ishaaq.me'),
-  alternates: {
-    canonical: '/',
-  },
   openGraph: {
     type: 'website',
     locale: 'en_US',

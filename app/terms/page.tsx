@@ -1,3 +1,15 @@
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Terms of Service | Ishaaq\'s Portfolio',
+  description: 'Terms of service governing the use of this website and our services.',
+  openGraph: {
+    title: 'Terms of Service | Ishaaq\'s Portfolio',
+    description: 'Terms of service governing the use of this website and our services.',
+    url: 'https://www.ishaaq.me/terms',
+  },
+};
+
 export default function TermsOfServicePage() {
   return (
     <main className="max-w-4xl mx-auto px-6 py-24">
