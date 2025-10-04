@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     description: 'Creating exceptional digital experiences through design and code.',
     images: [
       {
-        url: '/og-image.jpg',
+        url: 'https://media.licdn.com/dms/image/v2/D5603AQHrYglVsqiK6A/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1725122161025?e=1762387200&v=beta&t=V8YE0d9DZZl4H1gi5TewJ5BNCeIpXj3zGrI8Lc5GU6M',
         width: 1200,
         height: 630,
         alt: 'Portfolio - Designer & Developer',
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Ishaaq\'s Design Portfolio',
     description: 'Creating exceptional digital experiences through design and code.',
-    images: ['/twitter-image.jpg'],
+    images: ['https://media.licdn.com/dms/image/v2/D5603AQHrYglVsqiK6A/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1725122161025?e=1762387200&v=beta&t=V8YE0d9DZZl4H1gi5TewJ5BNCeIpXj3zGrI8Lc5GU6M'],
   },
   robots: {
     index: true,
