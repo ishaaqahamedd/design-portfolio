@@ -109,4 +109,12 @@ export const projects = [
     thumbnailUrl: 'https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=600',
     slug: 'ui-component-library',
   },
+  {
+    id: 7,
+    title: 'New case study',
+    category: 'vibe-coding',
+    description: 'Reusable component system for web apps',
+    thumbnailUrl: 'https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=600',
+    slug: 'new-case-study',
+  },
 ];

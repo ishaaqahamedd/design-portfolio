@@ -59,14 +59,14 @@ export default function ResourcePage({ params }: ResourcePageProps) {
       name: 'Portfolio',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://example.com/logo.png',
+        url: 'https://ishaaq.me/logo.png',
       },
     },
     datePublished: '2025-10-02',
     dateModified: '2025-10-02',
     mainEntityOfPage: {
       '@type': 'WebPage',
-      '@id': `https://example.com/resources/${resource.slug}`,
+      '@id': `https://ishaaq.me/resources/${resource.slug}`,
     },
   };
 
@@ -78,19 +78,19 @@ export default function ResourcePage({ params }: ResourcePageProps) {
         '@type': 'ListItem',
         position: 1,
         name: 'Home',
-        item: 'https://example.com',
+        item: 'https://ishaaq.me',
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: 'Resources',
-        item: 'https://example.com/#resources',
+        item: 'https://ishaaq.me/#resources',
       },
       {
         '@type': 'ListItem',
         position: 3,
         name: resource.title,
-        item: `https://example.com/resources/${resource.slug}`,
+        item: `https://ishaaq.me/resources/${resource.slug}`,
       },
     ],
   };

@@ -9,7 +9,7 @@ export default function Home() {
     '@type': 'Organization',
     name: 'Ishaaq Portfolio',
     url: 'https://www.ishaaq.me/',
-    logo: 'https://example.com/logo.png',
+    logo: 'https://ishaaq.me/logo.png',
     description: 'Creating exceptional digital experiences through design and code',
     contactPoint: {
       '@type': 'ContactPoint',
@@ -33,7 +33,7 @@ export default function Home() {
     description: 'Designer & Developer portfolio showcasing web development, UX design, and creative projects',
     potentialAction: {
       '@type': 'SearchAction',
-      target: 'https://example.com/projects?search={search_term_string}',
+      target: 'https://ishaaq.me/projects?search={search_term_string}',
       'query-input': 'required name=search_term_string',
     },
   };

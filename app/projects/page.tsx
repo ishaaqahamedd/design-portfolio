@@ -1,12 +1,12 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 import { projects } from '@/lib/data';
 import { ArrowLeft } from 'lucide-react';
 
-export default function ProjectsPage() {
+function ProjectsContent() {
   const searchParams = useSearchParams();
   const categoryParam = searchParams.get('category');
   const [selectedCategory, setSelectedCategory] = useState<string>(categoryParam || 'all');
@@ -54,7 +54,7 @@ export default function ProjectsPage() {
               className={`px-4 sm:px-6 py-2 sm:py-3 font-bold transition-colors border-b-2 whitespace-nowrap text-sm sm:text-base ${
                 selectedCategory === category.value
                   ? 'border-black text-black'
-                  : 'border-transparent text-gray-700 hover:text-black'
+                  : 'border-transparent text-gray-400 hover:text-gray-600'
               }`}
             >
               {category.label}
@@ -94,5 +94,31 @@ export default function ProjectsPage() {
         )}
       </div>
     </main>
+  );
+}
+
+export default function ProjectsPage() {
+  return (
+    <Suspense fallback={
+      <main className="pt-20 sm:pt-24 pb-12 sm:pb-20 min-h-screen bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <div className="mb-8 sm:mb-12">
+            <Link
+              href="/"
+              className="inline-flex items-center gap-2 text-gray-600 hover:text-black transition-colors mb-4 sm:mb-6 text-sm sm:text-base"
+            >
+              <ArrowLeft size={18} className="sm:w-5 sm:h-5" />
+              Back to Home
+            </Link>
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6">Projects</h1>
+            <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-3xl">
+              Loading...
+            </p>
+          </div>
+        </div>
+      </main>
+    }>
+      <ProjectsContent />
+    </Suspense>
   );
 }
