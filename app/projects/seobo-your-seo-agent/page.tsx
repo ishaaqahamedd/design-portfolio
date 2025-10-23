@@ -4,11 +4,11 @@ import type { Metadata } from 'next';
 import JsonLd from '@/components/JsonLd';
 
 export const metadata: Metadata = {
-  title: 'Real-time Dashboard | Portfolio',
-  description: 'Analytics dashboard with live data updates, WebSocket integration, and interactive data visualizations for enterprise clients',
+  title: 'SeoBo: Your SEO Agent by ishaaq',
+  description: 'Ishaaq designed and vibecoded SEOBO to amplify product reach to millions – from keyword research and content strategy to structured data.',
   openGraph: {
-    title: 'Real-time Dashboard',
-    description: 'Analytics dashboard with live data updates',
+    title: 'Want millions to see your product in no time?',
+    description: 'SEOBO makes it happen – a project designed and implemented by Ishaaq to amplify product reach with smart SEO strategies.',
     type: 'article',
   },
 };
@@ -17,8 +17,8 @@ export default function RealtimeDashboardPage() {
   const articleSchema = {
     '@context': 'https://schema.org',
     '@type': 'Article',
-    headline: 'Real-time Dashboard',
-    description: 'Analytics dashboard with live data updates',
+    headline: 'Want millions to see your product in no time?',
+    description: 'SEOBO makes it happen – a project designed and implemented by Ishaaq to amplify product reach with smart SEO strategies.',
     image: 'https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=600',
     author: {
       '@type': 'Person',
@@ -26,7 +26,7 @@ export default function RealtimeDashboardPage() {
     },
     publisher: {
       '@type': 'Organization',
-      name: 'Portfolio',
+      name: 'Ishaaq',
       logo: {
         '@type': 'ImageObject',
         url: 'https://ishaaq.me/logo.png',
@@ -56,7 +56,7 @@ export default function RealtimeDashboardPage() {
         '@type': 'ListItem',
         position: 3,
         name: 'Real-time Dashboard',
-        item: 'https://ishaaq.me/projects/realtime-dashboard',
+        item: 'https://ishaaq.me/projects/seobo-your-seo-agent',
       },
     ],
   };
@@ -66,6 +66,35 @@ export default function RealtimeDashboardPage() {
       <JsonLd data={articleSchema} />
       <JsonLd data={breadcrumbSchema} />
       <main className="min-h-screen bg-gray-950 text-white">
+        {/* HERO SECTION */}
+        <section className="relative flex items-center justify-center min-h-[80vh] sm:min-h-[90vh] lg:h-screen overflow-hidden">
+          {/* Background image */}
+          <div
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+            style={{
+              backgroundImage: "url(/seobo-hero.png)",
+            }}
+          />
+
+          {/* Gradient overlay for readability */}
+          <div className="absolute inset-0 bg-gradient-to-t from-white via-white/60 to-transparent" />
+
+          {/* Large "Coming Soon" text in the background */}
+          <h1 className="absolute bottom-0 left-1/2 -translate-x-1/2 text-[4rem] sm:text-[4rem]  md:text-[6rem] lg:text-[6rem] font-bold text-gray-400/30 select-none pointer-events-none whitespace-nowrap">
+            Coming Soon
+          </h1>
+
+          {/* Foreground content */}
+          <div className="relative z-10 text-center max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 sm:mb-6 leading-tight">
+              Reach Millions in No Time
+            </h1>
+            <p className="text-base sm:text-lg lg:text-xl text-gray-700 max-w-2xl mx-auto mb-2">
+              POB plans your SEO strategy, BOB implements it, and your product goes viral – all with SEOBO. 
+            </p>
+          </div>
+        </section>
+{/*         
         <div className="pt-24 pb-20">
           <div className="max-w-7xl mx-auto px-6">
             <Link
@@ -390,7 +419,7 @@ export default function RealtimeDashboardPage() {
               </div>
             </section>
           </div>
-        </div>
+        </div> */}
       </main>
     </>
   );

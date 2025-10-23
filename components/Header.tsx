@@ -27,7 +27,7 @@ export default function Header() {
 
           <ul className="hidden md:flex items-center gap-8">
             <li>
-              <Link href="/#work" className="text-black hover:text-gray-600 transition-colors font-medium">
+              <Link href="/projects?category=vibe-coding" className="text-black hover:text-gray-600 transition-colors font-medium">
                 Work
               </Link>
             </li>

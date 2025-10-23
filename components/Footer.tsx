@@ -19,7 +19,7 @@ export default function Footer() {
             <h4 className="font-bold mb-4">Navigation</h4>
             <ul className="space-y-2">
               <li>
-                <Link href="/#work" className="text-gray-400 hover:text-white transition-colors">
+                <Link href="/projects?category=vibe-coding" className="text-gray-400 hover:text-white transition-colors">
                   Work
                 </Link>
               </li>
@@ -45,12 +45,12 @@ export default function Footer() {
             <h4 className="font-bold mb-4">Projects</h4>
             <ul className="space-y-2">
               <li>
-                <Link href="/projects?category=vibe_coding" className="text-gray-400 hover:text-white transition-colors">
+                <Link href="/projects?category=vibe-coding" className="text-gray-400 hover:text-white transition-colors">
                   Vibe Coding
                 </Link>
               </li>
               <li>
-                <Link href="/projects?category=ux_case_studies" className="text-gray-400 hover:text-white transition-colors">
+                <Link href="/projects?category=ux-case-studies" className="text-gray-400 hover:text-white transition-colors">
                   UX Case Studies
                 </Link>
               </li>

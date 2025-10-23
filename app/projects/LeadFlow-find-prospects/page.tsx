@@ -4,11 +4,12 @@ import type { Metadata } from 'next';
 import JsonLd from '@/components/JsonLd';
 
 export const metadata: Metadata = {
-  title: 'Banking App Redesign | Portfolio',
-  description: 'Complete UX overhaul of mobile banking experience with enhanced security, intuitive navigation, and personalized financial insights',
+  title: 'LeadFlow-Prospect Discovery & Personalized Emails by Ishaaq',
+  description: 'A project by Ishaaq: LeadFlow helps discover high-quality prospects and craft personalized emails to boost engagement and conversions.',
   openGraph: {
-    title: 'Banking App Redesign',
-    description: 'Complete UX overhaul of mobile banking experience',
+    title: 'Struggling to Find the Right Leads? Meet LeadFlow',
+    description:
+      'See how Ishaaq built LeadFlow to simplify lead discovery and create personalized emails that actually convert. Explore the project now!',
     type: 'article',
   },
 };
@@ -17,8 +18,8 @@ export default function BankingAppRedesignPage() {
   const articleSchema = {
     '@context': 'https://schema.org',
     '@type': 'Article',
-    headline: 'Banking App Redesign',
-    description: 'Complete UX overhaul of mobile banking experience',
+    headline: 'LeadFlow-Prospect Discovery & Personalized Emails by Ishaaq',
+    description: 'A project by Ishaaq: LeadFlow helps discover high-quality prospects and craft personalized emails to boost engagement and conversions.',
     image: 'https://images.pexels.com/photos/4968630/pexels-photo-4968630.jpeg?auto=compress&cs=tinysrgb&w=600',
     author: {
       '@type': 'Person',
@@ -65,7 +66,36 @@ export default function BankingAppRedesignPage() {
     <>
       <JsonLd data={articleSchema} />
       <JsonLd data={breadcrumbSchema} />
-      <main className="min-h-screen bg-white">
+      <main className="min-h-screen">
+        {/* HERO SECTION */}
+        <section className="relative flex items-center justify-center min-h-[80vh] sm:min-h-[90vh] lg:h-screen overflow-hidden">
+          {/* Background image */}
+          <div
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+            style={{
+              backgroundImage: "url(/leadflow-hero.png)",
+            }}
+          />
+
+          {/* Gradient overlay for readability */}
+          <div className="absolute inset-0 bg-gradient-to-t from-white via-white/60 to-transparent" />
+
+          {/* Large "Coming Soon" text in the background */}
+          <h1 className="absolute bottom-0 left-1/2 -translate-x-1/2 text-[4rem] sm:text-[4rem]  md:text-[6rem] lg:text-[6rem] font-bold text-gray-400/30 select-none pointer-events-none whitespace-nowrap">
+            Coming Soon
+          </h1>
+
+          {/* Foreground content */}
+          <div className="relative z-10 text-center max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 sm:mb-6 leading-tight">
+              LeadFlow-Find Prospects
+            </h1>
+            <p className="text-base sm:text-lg lg:text-xl text-gray-700 max-w-2xl mx-auto mb-2">
+              Automate lead discovery and send personalized emails that convert.
+            </p>
+          </div>
+        </section>
+        {/* <main className="min-h-screen bg-white">
         <div className="pt-24 pb-20">
           <div className="max-w-7xl mx-auto px-6">
             <Link
@@ -339,7 +369,7 @@ export default function BankingAppRedesignPage() {
               </div>
             </section>
           </div>
-        </div>
+        </div> */}
       </main>
     </>
   );
